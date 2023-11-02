@@ -4,7 +4,9 @@ test('test', async ({ page }) => {
   await page.goto('https://mycar.kz/');
   //await page.getByRole('banner').getByRole('link', { name: 'Поиск авто' }).click();
   await expect(page.getByRole('banner').getByRole('link', { name: 'Поиск авто'})).toBeEnabled();
-  
+  });
+
+  test('test', async ({ page }) => {
   //await page.getByRole('link', { name: 'Новые авто' }).click();
   await expect(page.getByRole('link', { name: 'Новые авто' })).toBeEnabled();
  
