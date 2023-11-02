@@ -7,7 +7,7 @@ test('test', async ({ page }) => {
   });
 
   test('test1', async ({ page }) => {
-  await page.goto('https://mycar.kz/');
+//  await page.goto('https://mycar.kz/');
     //await page.getByRole('link', { name: 'Новые авто' }).click();
   await expect(page.getByRole('link', { name: 'Новые авто' })).toBeEnabled();
  
