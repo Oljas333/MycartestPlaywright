@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-  await page.goto('https://mycar.kz/');
+  await page.goto('https://dev.mycar.kz/');
   //await page.getByRole('banner').getByRole('link', { name: 'Поиск авто' }).click();
   await expect(page.getByRole('banner').getByRole('link', { name: 'Поиск авто'})).toBeEnabled();
   
